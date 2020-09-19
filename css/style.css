@@ -130,19 +130,15 @@ header {
 
 
 /*------панель------------*/
-.nav-link a {  text-decoration: none;  color: #ffffff;  text-transform: uppercase;  font-size: 13px;  padding-right: 30px;  font-family: "Open Sans";  font-weight: 400;}
+.nav-link a { text-decoration: none; color: #ffffff; text-transform: uppercase; font-size: 13px; padding-right: 30px; font-family: "Open Sans"; font-weight: 400;}
 
-@media(min-width: 361px) and (max-width: 768px){
-.nav-link{    display: none}}
-
-@media(max-width: 360px){
-.nav-link{    display: none}}
+@media(min-width: 361px) and (max-width: 768px){.nav-link{    display: none}}
+@media(max-width: 360px){.nav-link{    display: none}}
 
 .nav {display: flex;}
 
-@media(min-width: 361px) and (max-width: 768px){
+@media(min-width: 0px) and (max-width: 768px){
 .nav{
-  
   position: absolute;
   content: "";
   display: block;
@@ -187,12 +183,8 @@ header {
 /*------------название----------*/
 .title {  display: flex;  justify-content: space-around;}
 
-@media(min-width: 769px) and (max-width: 1175px){
-  #title{ width: 80.57vw;}}
-
-@media(min-width: 361px) and (max-width: 768px){
-  #title{   width: 80.57vw;}}
-
+@media(min-width: 769px) and (max-width: 1175px){ #title{ width: 80.57vw;}}
+@media(min-width: 361px) and (max-width: 768px){ #title{   width: 80.57vw;}}
 @media(max-width: 360px){
   #title{ 
     width: 78.94vw;
@@ -217,23 +209,9 @@ header {
   padding-bottom: 100px;
   padding-top: 125px;
 }
-
-@media(min-width: 361px) and (max-width: 767px){
-  .name h1 { 
-    width: 55.57vw; 
-    color: #ffffff; 
-    font-family: "Open Sans"; 
-    font-size: 40px; 
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 100px;
-    padding-top: 103px;
-    
-  }}
-
-@media(max-width: 360px){
-.name h1 {    padding-top: 104px;  }}
+@media(min-width: 600px) and (max-width: 767px){.name h1 {width: 55.57vw; padding-top: 73px; font-size: 40px;}}
+@media(min-width: 361px) and (max-width: 599px){.name h1 {width: 70.57vw; padding-top: 53px; font-size: 36px;}}
+@media(max-width: 360px){.name h1 {padding-top: 104px;}}
 
 /*-------------------сейчас в тренде-----------------------------*/
 
@@ -243,15 +221,13 @@ header {
 .content-section{
   width: 85vw;
   max-width: 85vw;
-  margin-left: auto;
-  margin-right: auto;
+margin: 0 auto;
   }}
 
 @media(min-width: 361px) and (max-width: 767px){
   .content-section {
     width: 98.70vw; 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
   }}
@@ -1138,7 +1114,11 @@ button:before {
   height: 410px
  }}
 
-.item-shop{margin-left: 1.95vw;margin-right: 1.95vw;}
+.item-shop{
+  width: 20.96vw;
+  margin-left: 1.95vw;
+  margin-right: 1.95vw;
+}
 @media(min-width: 361px) and (max-width: 768px){
   .item-shop{
     position: relative;
@@ -1165,10 +1145,12 @@ button:before {
   justify-content: center;
   padding-top: 25px;
   margin: 0 auto;
-  
+    height: 205px;
+      width: 18.07vw;
 }
 .item img{
-  width: 18vw;
+  width: 18.07vw;
+  height: 205px;
   margin-left: 0;
   padding-left: 1vw;
 }
@@ -1208,8 +1190,15 @@ button:before {
 }
 @media(min-width: 1175px) and (max-width: 1399px){
     .item-frame {
-    height: 320px;
+    height: 370px;
   }}
+@media(min-width: 768px) and (max-width: 1174px){
+    .item-frame {
+    height: 400px;
+  }}
+
+
+
   @media(min-width: 545px) and (max-width: 651px){
   .item-frame{
   height: 300px
@@ -1249,6 +1238,11 @@ button:before {
 @media(min-width: 1175px) and (max-width: 1399px){
   .price-text {
    font-size: 12px;
+  }}
+@media(min-width: 768px) and (max-width: 1174px){
+  .price-text {
+   font-size: 12px;
+    padding-top: 10px;
   }}
 .price-text a{
   color: #b59f5b;
@@ -1301,6 +1295,21 @@ button:before {
    margin-bottom: 25px;
   margin-right: 21px
 }
+
+
+
+@media(min-width: 800px) and (max-width: 1174px){
+    .shop {
+  font-size: 14px;
+      transform: translate(-2vw, 60px);
+      
+  }}
+@media(min-width: 768px) and (max-width: 799px){
+    .shop {
+  font-size: 12px;
+      transform: translate(-2vw, 60px);
+      
+  }}
 .shop:hover{
   opacity: 0.7;
   transition-duration: 0.7s;
@@ -1309,6 +1318,7 @@ button:before {
 .shop-link {
   padding-top: 15px;
 }
+
 
 #text-one a {
   text-decoration: none;
@@ -1331,6 +1341,7 @@ button:before {
   
   .price-text {
     font-size: 14px;
+ 
   } 
   .title-price{
   
